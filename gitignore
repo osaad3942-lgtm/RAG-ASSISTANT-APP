@@ -1,0 +1,30 @@
+# --- Environments ---
+
+env/
+__pycache__/
+*.pyc
+
+# --- Secrets / environment config ---
+.env
+backend/.env
+frontend/.env
+
+# --- Logs ---
+*.log
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- Jupyter checkpoints ---
+.ipynb_checkpoints/
+
+# --- IDE ---
+.vscode/
+.idea/
+
+# NOTE: the raw document corpus (data/documents/) and the persisted vector
+# stores (data/vector_store/, backend/data/vector_store/) are intentionally
+# NOT excluded here. Combined they are well under the 50 MB guideline
+# threshold for committing small artifacts directly (see README for exact
+# sizes), so they are committed as-is for reproducibility.
